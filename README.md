@@ -1,8 +1,7 @@
-# React + Vite
+GYANA-AI 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GYANA-AI is a cutting-edge web application developed with React.js and styled using Tailwind CSS, leveraging Google's Gemini API for sophisticated AI-driven interactions. Features Employs Google's Gemini API for advanced AI capabilities. Facilitates natural language conversations for information retrieval and insights. Created with React.js and Tailwind CSS for a modern and responsive user interface.
 
-Currently, two official plugins are available:
+Run the Application: npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used Vite React.js Tailwind CSS
