@@ -31,30 +31,30 @@ const Main = () => {
     <div className={`flex flex-col justify-start items-start w-full gap-3 sm:w-9/12 sm:mx-auto lg:w-8/12 ${!mode ? " bg-secondryl" : "bg-secondryd"}`}>
       {!showResults ? (
         <>
-          <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-600 mt-24 text-4xl font-medium ml-2 lg:ml-20">Hello,</p>
-          <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-600 text-4xl font-medium ml-2 lg:ml-20">How can I help you today?</p>
+          <p className="mt-24 ml-2 text-4xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-600 lg:ml-20">Hello,</p>
+          <p className="ml-2 text-4xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-600 lg:ml-20">How can I help you today?</p>
 
-          <div className="flex w-full h-full gap-1 overflow-x-auto hide-scrollbar mt-16 lg:gap-5 lg:ml-20">
-            <div className={`flex flex-col justify-start items-start w-44 h-36 ml-2 flex-shrink-0 rounded-md gap-5 ${!mode ? "bg-primaryl" : "bg-primaryd"}`} onClick={handleCardClick("help me write an essay")}>
+          <div className="flex w-full h-full gap-1 mt-16 overflow-x-auto hide-scrollbar lg:gap-5 lg:ml-20">
+            <div className={`flex flex-col justify-start items-start w-44 h-36 ml-2 flex-shrink-0 rounded-md gap-5 ${!mode ? "bg-primaryl" : "bg-primaryd"} cursor-pointer`} onClick={handleCardClick("help me write an essay")}>
               <IoIosCreate className={`mx-auto mt-5 text-4xl ${!mode ? "text-fntl" : "text-fntd"}`} />
               <p className={`text-center mx-auto ${!mode ? "text-fntl" : "text-fntd"}`}>Help me write an essay</p>
             </div>
-            <div className={`flex flex-col justify-start items-start w-44 h-36 ml-2 flex-shrink-0 rounded-md gap-5 ${!mode ? "bg-primaryl" : "bg-primaryd"}`} onClick={handleCardClick("suggest a good place in Bengaluru")}>
+            <div className={`flex flex-col justify-start items-start w-44 h-36 ml-2 flex-shrink-0 rounded-md gap-5 ${!mode ? "bg-primaryl" : "bg-primaryd"} cursor-pointer`} onClick={handleCardClick("suggest a good place in Bengaluru")}>
               <FaMapMarkedAlt className={`mx-auto mt-5 text-4xl ${!mode ? "text-fntl" : "text-fntd"}`} />
               <p className={`text-center mx-auto ${!mode ? "text-fntl" : "text-fntd"}`}>Suggest a good place in Bengaluru</p>
             </div>
-            <div className={`flex flex-col justify-start items-start w-44 h-36 ml-2 flex-shrink-0 rounded-md gap-5 ${!mode ? "bg-primaryl" : "bg-primaryd"}`} onClick={handleCardClick("Create a Script for the YouTube about coding")}>
+            <div className={`flex flex-col justify-start items-start w-44 h-36 ml-2 flex-shrink-0 rounded-md gap-5 ${!mode ? "bg-primaryl" : "bg-primaryd"} cursor-pointer`} onClick={handleCardClick("Create a Script for the YouTube about coding")}>
               <MdOutlineDescription className={`mx-auto mt-5 text-4xl ${!mode ? "text-fntl" : "text-fntd"}`} />
               <p className={`text-center mx-auto ${!mode ? "text-fntl" : "text-fntd"}`}>Create a script for YouTube about coding</p>
             </div>
-            <div className={`flex flex-col justify-start items-start w-44 h-36 ml-2 flex-shrink-0 rounded-md gap-5 ${!mode ? "bg-primaryl" : "bg-primaryd"}`} onClick={handleCardClick("How to create a gyroscope using a disc?")}>
+            <div className={`flex flex-col justify-start items-start w-44 h-36 ml-2 flex-shrink-0 rounded-md gap-5 ${!mode ? "bg-primaryl" : "bg-primaryd"} cursor-pointer`} onClick={handleCardClick("How to create a gyroscope using a disc?")}>
               <FaRegLightbulb className={`mx-auto mt-5 text-4xl ${!mode ? "text-fntl" : "text-fntd"}`} />
               <p className={`text-center mx-auto ${!mode ? "text-fntl" : "text-fntd"}`}>How to create a gyroscope using a disc?</p>
             </div>
           </div>
         </>
       ) : (
-        <div className="flex flex-col justify-center items-center w-full h-full">
+        <div className="flex flex-col items-center justify-center w-full h-full">
           <div className="flex justify-end w-full h-full m-14">
             <div className={`w-5/6 h-full rounded-md sm:w-3/5 lg:w-2/6 ${!mode ? "bg-primaryl" : "bg-primaryd"} `}>
               <p className={`m-1 ${!mode ? "text-fntl" : "text-fntd"} `}>{recentPrompt}</p>

@@ -23,7 +23,7 @@ const Search = () => {
 							value={input}
 							/>
         <div className={`rounded-lg ${!mode ? "bg-primaryl" : "bg-primaryd"} `}>
-          <IoSend className={`text-2xl m-2 ${!mode ? "text-fntl" : "text-fntd"}`} onClick={() => {
+          <IoSend className={`text-2xl m-2 ${!mode ? "text-fntl" : "text-fntd"} cursor-pointer`} onClick={() => {
 									onSent();
 								}}/>
         </div>
